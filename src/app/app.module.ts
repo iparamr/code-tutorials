@@ -7,16 +7,20 @@ import { ContentfulService } from './contentful.service';
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { MdToHtmlPipe } from './md-to-html.pipe';
+import { CountryListComponent } from './country-list/country-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseListComponent,
     CourseDetailsComponent,
-    MdToHtmlPipe
+    MdToHtmlPipe,
+    CountryListComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [ContentfulService],
