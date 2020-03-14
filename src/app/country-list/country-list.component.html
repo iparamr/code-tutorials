@@ -1,0 +1,11 @@
+<div class="alert alert-info" role="alert">
+  <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+    <div class="p-2">
+      <input type="text" size="60" placeholder="Please enter search text" (keyup)="onInput($event)"
+             [(ngModel)]="myInput"/>
+      <ol>
+        <li *ngFor="let country of filteredCountries">{{country.country}}</li>
+      </ol>
+    </div>
+  </div>
+</div>
