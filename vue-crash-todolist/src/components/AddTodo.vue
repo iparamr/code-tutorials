@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import uuid from 'uuid';
 export default {
   name: "AddTodo",
   data() {
@@ -20,7 +19,6 @@ export default {
     addTodo(e) {
       e.preventDefault();
       const newTodo = {
-        id: uuid.v4(),
         title: this.title,
         completed: false
       }
@@ -43,5 +41,16 @@ export default {
   }
   input[type="submit"] {
     flex: 2;
+  }
+  .btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #666;
   }
 </style>
